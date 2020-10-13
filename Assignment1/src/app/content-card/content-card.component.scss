@@ -1,0 +1,20 @@
+:host {
+  width: 400px;
+  display: block;
+  margin: 24px auto;
+  padding: 5px;
+  border: 1px dashed red;
+}
+
+:host.is-last{
+  border: 2px solid black;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.content-image{
+  width: 400px;
+}
