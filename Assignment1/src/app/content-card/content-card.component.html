@@ -1,2 +1,9 @@
-<ul [innerHTML]="content1 + '</br>' + content2 + '</br>' + content3"></ul>
+<div class="content-{{content.id}}">
+  <div class="title">{{content.title}}</div>
+  <img class="content-image" src="{{content.imgUrl}}" (click)="onClick()" *ngIf="content.imgUrl">
+  <div class="author">Author: {{content.author}}</div>
+  <div class="body">Body: {{content.body}}</div>
+  <div class="type" *ngIf="content.type">Type: {{content.type}}</div>
+  <div class="tags" *ngIf="content.tags">Tags: {{content.tags}}</div>
+</div>
 
