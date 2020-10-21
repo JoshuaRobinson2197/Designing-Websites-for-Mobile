@@ -3,7 +3,14 @@
   display: block;
   margin: 24px auto;
   padding: 5px;
-  border: 1px dashed red;
+}
+
+:host.content-fluff{
+  border: 2px dashed red;
+}
+
+:host.content-news{
+  border: 2px dashed blue;
 }
 
 :host.is-last{
@@ -18,3 +25,5 @@
 .content-image{
   width: 400px;
 }
+
+
