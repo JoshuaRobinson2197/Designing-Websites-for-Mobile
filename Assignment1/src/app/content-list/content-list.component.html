@@ -1,1 +1,3 @@
-<app-content-card *ngFor="let item of contentList; index as i; last as isLast" [content]="item" [class.is-last]="isLast"></app-content-card>
+<input #contentTitle> <button (click)="searchByTitle(contentTitle.value)">Search</button>
+<app-content-card *ngFor="let item of (contentList | specificType: 'fluff'); index as i; last as isLast" [content]="item" [class.is-last]="isLast" class="content-fluff"></app-content-card>
+<app-content-card *ngFor="let item of (contentList | specificType: 'news'); index as i; last as isLast" [content]="item" [class.is-last]="isLast" class="content-news"></app-content-card>
