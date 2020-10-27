@@ -1,9 +1,11 @@
 <div class="content-{{content.id}}">
-  <div class="title">{{content.title}}</div>
+  <div class="title" appHoverStyle [decoration]="'underline'">{{content.title}}</div>
   <img class="content-image" src="{{content.imgUrl}}" (click)="onClick()" *ngIf="content.imgUrl">
+  <img class="content-image" src="https://cdn.pixabay.com/photo/2018/03/23/22/11/question-mark-3255140_960_720.jpg" (click)="onClick()" *ngIf="!content.imgUrl">
   <div class="author">Author: {{content.author}}</div>
   <div class="body">Body: {{content.body}}</div>
   <div class="type" *ngIf="content.type">Type: {{content.type}}</div>
-  <div class="tags" *ngIf="content.tags">Tags: {{content.tags}}</div>
+  <br>
+  <div>Tags: </div>
+  <div class="tags" *ngFor="let tag of content.tags" appHoverStyle [decoration]="'bold'">{{tag}}</div>
 </div>
-
