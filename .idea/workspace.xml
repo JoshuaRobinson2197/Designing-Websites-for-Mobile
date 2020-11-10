@@ -46,6 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Desktop/St. Clair/Designing Websites for Mobile/Midterm" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -83,7 +84,8 @@
       <workItem from="1601991381587" duration="10000" />
       <workItem from="1602594980588" duration="8343000" />
       <workItem from="1603215456969" duration="600000" />
-      <workItem from="1603814470269" duration="8005000" />
+      <workItem from="1603814470269" duration="8664000" />
+      <workItem from="1604519585529" duration="12111000" />
     </task>
     <servers />
   </component>
@@ -101,5 +103,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="267" key="FileChooserDialogImpl" timestamp="1604538569654">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="267" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604538569654" />
   </component>
 </project>
