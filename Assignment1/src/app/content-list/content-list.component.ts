@@ -72,4 +72,10 @@ export class ContentListComponent implements OnInit {
       console.log('It definitely does not exists. Trust me');
     }
   }
+
+  addArticleToList(promiseFromChild: Promise<Content>): void {
+    promiseFromChild.then(successResult => this.contentList.push(successResult)).catch(failResult => console.log(failResult));
+
+    this.contentList = Object.assign([], this.contentList);
+  }
 }
