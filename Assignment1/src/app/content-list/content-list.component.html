@@ -1,3 +1,4 @@
-<input #contentTitle> <button (click)="searchByTitle(contentTitle.value)">Search</button>
+<app-create-content (newArticleEvent)="addArticleToList($event)"></app-create-content>
+Search: <input #contentTitle> <button (click)="searchByTitle(contentTitle.value)">Search</button>
 <app-content-card *ngFor="let item of (contentList | specificType: 'fluff'); index as i; last as isLast" [content]="item" [class.is-last]="isLast" class="content-fluff"></app-content-card>
 <app-content-card *ngFor="let item of (contentList | specificType: 'news'); index as i; last as isLast" [content]="item" [class.is-last]="isLast" class="content-news"></app-content-card>
