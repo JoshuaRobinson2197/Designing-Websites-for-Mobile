@@ -54,6 +54,11 @@
     <property name="ts.external.directory.path" value="C:\Users\joshu\Documents\GitHub\learning-angular\Designing-Websites-for-Mobile\Assignment1\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joshu\Documents\GitHub\learning-angular\Designing-Websites-for-Mobile\Assignment1\src\app\services\content-service" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.content-card.component.html">
     <configuration name="app.component.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Designing-Websites-for-Mobile/Assignment1/src/app/app.component.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -86,6 +91,7 @@
       <workItem from="1603215456969" duration="600000" />
       <workItem from="1603814470269" duration="8664000" />
       <workItem from="1604519585529" duration="12111000" />
+      <workItem from="1605637249767" duration="2243000" />
     </task>
     <servers />
   </component>
