@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -56,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joshu\Documents\GitHub\learning-angular\Designing-Websites-for-Mobile\Assignment1\src\app\services\in-memory-data" />
       <recent name="C:\Users\joshu\Documents\GitHub\learning-angular\Designing-Websites-for-Mobile\Assignment1\src\app\services\content-service" />
     </key>
   </component>
@@ -92,6 +96,7 @@
       <workItem from="1603814470269" duration="8664000" />
       <workItem from="1604519585529" duration="12111000" />
       <workItem from="1605637249767" duration="3856000" />
+      <workItem from="1606494780712" duration="8513000" />
     </task>
     <servers />
   </component>
@@ -115,5 +120,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="267" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604538569654" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606507351419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606507351419" />
   </component>
 </project>

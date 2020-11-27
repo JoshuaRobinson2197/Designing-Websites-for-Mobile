@@ -13,7 +13,7 @@ export class ContentListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.contentService.getContentObs().subscribe(cl => this.contentList = cl);
+    this.contentService.getContent().subscribe(cl => this.contentList = cl);
   }
 
   searchByTitle(titleSearched: string): void {
@@ -28,5 +28,10 @@ export class ContentListComponent implements OnInit {
     }else{
       console.log('It definitely does not exists. Trust me');
     }
+  }
+
+  addArticleToList(articleFromChild: Content): void {
+    this.contentList.push(articleFromChild);
+    this.contentList = Object.assign([], this.contentList);
   }
 }
