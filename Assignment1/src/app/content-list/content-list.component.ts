@@ -8,7 +8,7 @@ import {ContentService} from '../services/content-service/content.service';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent implements OnInit {
-  contentList: Content[];
+  contentList: Content[] = [];
   constructor(private contentService: ContentService) {
   }
 

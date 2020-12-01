@@ -35,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Desktop/St. Clair/Designing Websites for Mobile/Midterm" />
@@ -97,6 +99,7 @@
       <workItem from="1604519585529" duration="12111000" />
       <workItem from="1605637249767" duration="3856000" />
       <workItem from="1606494780712" duration="8513000" />
+      <workItem from="1606832776337" duration="8504000" />
     </task>
     <servers />
   </component>

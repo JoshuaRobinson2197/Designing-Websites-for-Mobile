@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Add Content</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Id</mat-label> <input matInput [(ngModel)]="newArticle.id">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Author</mat-label> <input matInput [(ngModel)]="newArticle.author">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Image URL</mat-label> <input matInput [(ngModel)]="newArticle.imgUrl">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Type</mat-label> <input matInput [(ngModel)]="newArticle.type">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Title</mat-label> <input matInput [(ngModel)]="newArticle.title">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Body</mat-label> <input matInput [(ngModel)]="newArticle.body">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tags</mat-label> <input matInput [(ngModel)]="tags">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">cancel</button>
+  <button mat-button [mat-dialog-close]="newArticle" cdkFocusInitial>Add Content</button>
+</div>
+
