@@ -1,0 +1,12 @@
+<div class="content-{{article.id}}">
+  <img class="content-image" src="{{article.imgUrl}}" *ngIf="article.imgUrl">
+  <img class="content-image" src="https://cdn.pixabay.com/photo/2018/03/23/22/11/question-mark-3255140_960_720.jpg" *ngIf="!article.imgUrl">
+  <div class="title" appHoverStyle [decoration]="'underline'">{{article.title}}</div>
+  <div class="author">Author: {{article.author}}</div><br>
+  <div class="body">{{article.body}}</div><br>
+  <div class="type" *ngIf="article.type">Type: {{article.type}}</div>
+  <div>Tags: </div>
+  <div class="tags" *ngFor="let tag of article.tags" appHoverStyle [decoration]="'bold'">{{tag}}</div>
+
+  <a [routerLink]="['/content']" routerLinkActive="active">Back to List!</a><br>
+</div>

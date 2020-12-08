@@ -8,4 +8,6 @@
   <br>
   <div>Tags: </div>
   <div class="tags" *ngFor="let tag of content.tags" appHoverStyle [decoration]="'bold'">{{tag}}</div>
+
+  <a [routerLink]="['/content', content.id]" routerLinkActive="active">Content Detail</a><br>
 </div>

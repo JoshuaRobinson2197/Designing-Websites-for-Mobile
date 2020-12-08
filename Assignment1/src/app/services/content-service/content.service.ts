@@ -13,6 +13,9 @@ export class ContentService {
     headers: new HttpHeaders({'Content-type' : 'application/json'})
   };
   constructor(private messageService: MessageService, private http: HttpClient) { }
+  getSpecificContent(id: number): Observable<Content> {
+    return this.http.get<Content>('api/content/' + id);
+  }
   getContent(): Observable<Content[]> {
     this.messageService.add('Content retrieved!');
     return this.http.get<Content[]>('api/content');

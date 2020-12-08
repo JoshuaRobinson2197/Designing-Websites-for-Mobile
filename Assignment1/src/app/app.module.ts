@@ -13,9 +13,12 @@ import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './services/in-memory-data/in-memory-data.service';
 import {AddContentDialog, CreateContentComponent} from './create-content/create-content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
-import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     HoverStyleDirective,
     AppMessagesComponent,
     CreateContentComponent,
-    AddContentDialog
+    AddContentDialog,
+    ContentDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -38,10 +43,15 @@ import {MatDialogModule} from "@angular/material/dialog";
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    RouterModule.forRoot([
+      { path: 'content/:id', component: ContentDetailComponent },
+      { path: 'content', component: ContentListComponent },
+      { path: '**', component: NotFoundComponent }
+      ])
   ],
   providers: [],
   entryComponents: [AddContentDialog],
-  bootstrap: [AppComponent, ContentListComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
