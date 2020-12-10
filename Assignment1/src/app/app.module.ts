@@ -19,6 +19,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {RouterModule} from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -44,11 +47,13 @@ import {RouterModule} from '@angular/router';
     MatButtonModule,
     MatInputModule,
     MatDialogModule,
+    MatSnackBarModule,
     RouterModule.forRoot([
       { path: 'content/:id', component: ContentDetailComponent },
       { path: 'content', component: ContentListComponent },
       { path: '**', component: NotFoundComponent }
-      ])
+      ]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   entryComponents: [AddContentDialog],
